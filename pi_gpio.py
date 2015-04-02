@@ -6,7 +6,7 @@ GPIO.setwarnings(False)
 
 led = 4
 
-led = raw_input('Please provide the LED pin number:')
+led = int(raw_input('Please provide the LED pin number:'))
 GPIO.setup(led, GPIO.OUT)
 
 flag = 0
