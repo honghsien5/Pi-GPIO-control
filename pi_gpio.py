@@ -6,17 +6,19 @@ GPIO.setwarnings(False)
 
 led = 4
 
-led = int(raw_input('Please provide the LED pin number:'))
+led = int(raw_input('Please provide the LED pin number: '))
 GPIO.setup(led, GPIO.OUT)
 
 flag = 0
 while(True):
-	input = raw_input("'y' for LED toggle, 'q' for exit")
+	input = raw_input("'y' for LED toggle, 'q' for exit\n")
 	if(input == 'y'):
 		if(flag == 0 ):
 			GPIO.output(led, 1)
+			flag =1
 		else:
 			GPIO.output(led, 0)
+			flag =0
 	elif(input == 'q'):
 		break		
 	
