@@ -16,9 +16,11 @@ while(True):
 		if(flag == 0 ):
 			GPIO.output(led, 1)
 			flag =1
+			print 'GPIO on'
 		else:
 			GPIO.output(led, 0)
 			flag =0
+			print 'GPIO off'
 	elif(input == 'q'):
 		break		
 	
