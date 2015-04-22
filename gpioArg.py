@@ -13,8 +13,8 @@ GPIO.setwarnings(False)
 
 #Assign LED pin
 
-if len(sys.argv) != 2:
-    raise ValueError("Arm not found")
+if len(sys.argv) != 3:
+    raise ValueError("incorrect argument count")
 
 led = str(sys.argv[1])
 switch = str(sys.argv[2])
