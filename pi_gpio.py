@@ -5,7 +5,6 @@
 #import libraries
 import RPi.GPIO as GPIO
 import time
-import sys
 
 #Configure the GPIO pin
 GPIO.setmode(GPIO.BCM)
