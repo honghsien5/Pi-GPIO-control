@@ -16,7 +16,7 @@ GPIO.setwarnings(False)
 if len(sys.argv) != 3:
     raise ValueError("incorrect argument count")
 
-led = str(sys.argv[1])
+led = sys.argv[1]
 switch = str(sys.argv[2])
 GPIO.setup(led, GPIO.OUT)
 
